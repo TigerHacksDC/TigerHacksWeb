@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Fira Code;
+    src: url("../fonts/FiraCode-Regular.ttf");
+}
+
+@font-face {
+    font-family: Fira Code;
+    src: url("../fonts/FiraCode-Bold.ttf");
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+    font-size: 20px;
+    font-family: Fira Code;
+    color: #17da72;   
+    vertical-align: middle;
+}
+
+ul li img {
+    filter: invert(56%) sepia(76%) saturate(1070%) hue-rotate(115deg) brightness(108%) contrast(82%);
+    width: 20px; 
+    height: 20px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+ul {
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+
+#about_home_link {
+    font-weight: bold;
+}
+
+body {
+    margin: 0px;
+}
+
+#about_navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    background-color: #2b2b2b;
+    filter: drop-shadow(0px 1px 2px #000000);
+}
+
+#about_title {
+    height: 100vh;
+}
+
+#about_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Fira Code;
+    color:#17da72;
+    font-weight: bold;
+    font-size: 45px;
+
+    background-image: url("../img/checkerboard.png");
+}
+
+#about_content {
+    background-color: #303030;
+    height: 100vh;
+    padding: 120px;
+}
+
+#about_content h2 {
+    font-family: Fira Code;
+    margin-top: 0px;
+    font-weight: bold;
+    color: #17da72;
+    font-size: 22px;
+}
+
+#about_content p {
+    font-family: Fira Code;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 18px;
+}
