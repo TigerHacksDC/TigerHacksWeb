@@ -59,6 +59,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Fira Code", monospace;
@@ -77,6 +81,7 @@ body {
     font-size: var(--text-med);
 
     z-index: 2;
+    scroll-margin-top: calc(2 * var(--text-subtitle));
 }
 @media screen and (max-width: 800px) {
     .section {

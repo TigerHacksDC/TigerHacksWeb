@@ -3,16 +3,13 @@
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: transform 0.5s;
 
     padding: 16px;
     width: 100%;
 
     font-size: var(--text-med);
-
     background-color: var(--background-tertiary);
-
-    transition: transform 0.5s;
-
     box-sizing: border-box;
 }
 
