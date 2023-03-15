@@ -38,6 +38,7 @@
     --primary: #17da72;
     /* --primary: #00db12; */
     --primary-light: #34ea89;
+    --primary-dark: #17da7240;
     --primary-highlight: #67efa6;
 
     --text-small: 1rem;
@@ -46,8 +47,10 @@
     --text-subtitle: 3rem;
     --text-title: 5rem;
 
+    --radius-small: 3px;
     --radius: 10px;
     --border: rgba(255, 255, 255, 0.05);
+    --font: "Fira Code", monospace;
 }
 
 @media screen and (max-width: 800px) {
@@ -65,7 +68,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "Fira Code", monospace;
+    font-family: var(--font);
     color: var(--text-primary);
     background-color: var(--background-primary);
     font-size: var(--text-small);
@@ -130,6 +133,36 @@ body {
     width: 7em;
     height: 7em;
     margin: 1em;
+}
+
+#register {
+    text-align: center;
+    margin-bottom: 20rem;
+}
+#register button {
+    font-size: var(--text-med);
+}
+
+button {
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+
+    background: linear-gradient(to right, var(--primary), var(--primary), var(--primary-highlight), var(--primary));
+    background-size: 500% 100%;
+    transition: 0.5s, background-position 0.75s, outline 0.1s;
+
+    color: var(--background-primary);
+    cursor: pointer;
+    font-family: var(--font);
+}
+button:hover {
+    background-position: -100% 0;
+    outline: 1px solid var(--primary-dark);
+}
+button:active, button:focus {
+    outline: 3px solid var(--primary-dark);
 }
 
 h1 {

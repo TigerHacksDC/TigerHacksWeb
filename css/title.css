@@ -32,7 +32,7 @@
     font-weight: 500;
 }
 
-#register {
+#register-link {
     font-size: var(--text-big);
     pointer-events: all;
 
@@ -52,13 +52,13 @@
     background-position: 0 0;
 }
 
-#register:hover {
+#register-link:hover {
     background-position: -100% 0;
     cursor: pointer;
     font-weight: 500;
 }
 
-#register:hover #register-text::after {
+#register-link:hover #register-text::after {
     background-position: -100% 0;
 }
 
