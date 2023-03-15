@@ -11,7 +11,7 @@
 }
 
 #title {
-    font-size: 5rem;
+    font-size: var(--text-title);
     font-weight: bold;
 
     display: flex;
@@ -28,22 +28,19 @@
     display: flex;
     flex-direction: row;
 
-    font-size: 3rem;
+    font-size: var(--text-subtitle);
     font-weight: 500;
-
-    height: 1em;
 }
 
 #register {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: var(--text-big);
     pointer-events: all;
 
     width: max-content;
 
-    opacity: 0;  
-    transform: translateY(1em);
+    opacity: 0;
 
+    transform: translateY(1em);
     transition: 0.5s, background-position 0.75s;
 
     background: linear-gradient(to right, var(--primary), var(--primary), var(--primary-highlight), var(--primary));
