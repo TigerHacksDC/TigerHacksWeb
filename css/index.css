@@ -1,0 +1,71 @@
+
+:root {
+    --background-primary: #262931;
+    --background-secondary: #2a2e36;
+    --background-tertiary: #21242b;
+    --background-accent: #333741;
+
+    /* --background-primary: #21242b;
+    --background-secondary: #191c21;
+    --background-tertiary: #15181c;
+    --background-accent: #313540; */
+
+    --primary: #ff6188;
+    --primary-light: #ff7a9c;
+    --primary-highlight: #ffb3c6;
+
+    --text-primary: #f0f0f0;
+}
+
+:root {
+    /* green */
+    /* --background-primary: #25302f; */
+    /* --background-secondary: #293534; */
+    /* --background-tertiary: #212b2a; */
+    /* --background-accent: #313f3e; */
+    
+
+    /* gray */
+    --background-primary: #303030;
+    --background-secondary: #363636;
+    --background-tertiary: #2b2b2b;
+    --background-accent: #404040;
+
+    --primary: #60ffa2;
+    --primary-light: #7affb1;
+    --primary-highlight: #b3ffd2;
+
+    --text-primary: #f0f0f0;
+
+    --primary: #17da72;
+    /* --primary: #00db12; */
+    --primary-light: #34ea89;
+    --primary-highlight: #67efa6;
+}/**/
+
+body {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    color: var(--text-primary);
+}
+*::selection {
+    color: var(--text-primary);
+    background-color: var(--primary);
+}
+
+.section {
+    padding: 7.5%;
+
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+
+    z-index: 2;
+}
+
+h1 {
+    color: var(--primary);
+}
+h1::selection {
+    background-color: var(--primary);
+}
+

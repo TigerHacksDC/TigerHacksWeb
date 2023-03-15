@@ -1,0 +1,42 @@
+#tiles {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    /* variables are set in js */
+    grid-template-rows: repeat(var(--rows), 1fr);
+    grid-template-columns: 1;
+    z-index: -1;
+
+    /* cursor: none; */
+}
+
+.row {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.row:nth-child(even) .tile:nth-child(even) {
+    background-color: var(--background-primary);
+}
+.row:nth-child(even) .tile:nth-child(odd) {
+    background-color: var(--background-secondary);
+}
+
+.row:nth-child(odd) .tile:nth-child(even) {
+    background-color: var(--background-secondary);
+}
+.row:nth-child(odd) .tile:nth-child(odd) {
+    background-color: var(--background-primary);
+}
+
+.tile {
+    transition: 0.5s;
+}
+
+.tile:hover {
+    /* filter: brightness(130%); */
+    background-color: var(--background-accent) !important;
+    transition: 0s;
+}

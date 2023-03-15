@@ -1,0 +1,64 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    padding: 16px;
+    width: 100%;
+
+    font-size: 24px;
+
+    background-color: var(--background-tertiary);
+
+    transition: transform 0.5s;
+
+    box-sizing: border-box;
+}
+
+#navbar.hidden {
+    pointer-events: none;
+    transform: translateY(-100%);
+}
+
+#navbar a {
+    color: var(--primary);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s;
+}
+
+#navbar a::after {
+    content: "";
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 0.1em;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s, color 0.2s;
+
+    background: var(--primary);
+}
+
+#navbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    /* background: var(--primary-light); */
+}
+
+#navbar a.fa-brands::after {
+    margin-top: 4px;
+}
+
+#navbar .navbar-title {
+    font-weight: 550;
+}
+
+#navbar-right {
+    float: right;
+}
