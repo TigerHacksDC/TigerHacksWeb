@@ -87,8 +87,13 @@ body {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 1rem;
+}
+@media screen and (max-width: 25rem) {
+    .cards {
+        grid-template-columns: initial;
+    }
 }
 .card {
     background-color: var(--background-secondary);
@@ -102,6 +107,24 @@ body {
 }
 .card p {
     margin: 0.25em 0 0 0;
+}
+
+#sponsors {
+    margin-left: auto;
+    margin-right: auto;
+}
+#sponsor-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#sponsors h1 {
+    text-align: center;
+}
+#sponsors img {
+    width: 7em;
+    height: 7em;
+    margin: 1em;
 }
 
 h1 {
