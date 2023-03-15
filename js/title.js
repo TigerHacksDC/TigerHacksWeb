@@ -56,6 +56,6 @@ await typeText(subtitle, document.getElementById("subtitle-text"), subtitleTypin
 
 // register button slide in
 await new Promise(r => setTimeout(r, registerDelay))
-document.getElementById("register").style.opacity = "1";
-document.getElementById("register").style.transform = "none";
+document.getElementById("register-link").style.opacity = "1";
+document.getElementById("register-link").style.transform = "none";
 
