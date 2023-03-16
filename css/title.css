@@ -2,7 +2,7 @@
 #title-container {
     position: absolute;
     top: 50%;
-    left: 1%;
+    left: 5%;
     transform: translateY(-50%);
     
     pointer-events: none;
