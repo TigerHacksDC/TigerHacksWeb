@@ -117,9 +117,36 @@ body {
     margin: 0.25em 0 0 0;
 }
 
+.section:nth-child(2n-1) {
+    background: var(--background-secondary);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.section:nth-child(2n-1) h1 {
+    margin-top: 0;
+}
+.section:nth-child(2n-1) .card {
+    background-color: var(--background-accent);
+}
+.section:nth-child(2n) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#faq {
+    max-width: initial;
+}
+#faq-wrapper {
+    max-width: 70%;
+    margin: auto;
+}
+
 #sponsors {
     margin-left: auto;
     margin-right: auto;
+    max-width: initial;
 }
 #sponsor-images {
     display: flex;
@@ -137,7 +164,9 @@ body {
 
 #register {
     text-align: center;
-    margin-bottom: 20rem;
+    max-width: initial;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
 }
 #register button {
     font-size: var(--text-med);
