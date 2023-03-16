@@ -32,7 +32,7 @@
 }
 
 .tile {
-    transition: 0.5s;
+    transition: 2s;
 }
 
 .tile:hover {

@@ -1,6 +1,6 @@
 const root = document.getElementById("tiles");
 
-let tileSize = 125;
+let tileSize = 100;
 
 // creates the grid of tile elements
 function createGrid() {
