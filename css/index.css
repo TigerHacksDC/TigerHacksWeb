@@ -1,20 +1,20 @@
-:root {
-    --background-primary: #262931;
-    --background-secondary: #2a2e36;
-    --background-tertiary: #21242b;
-    --background-accent: #333741;
+/*:root {*/
+/*    --background-primary: #262931;*/
+/*    --background-secondary: #2a2e36;*/
+/*    --background-tertiary: #21242b;*/
+/*    --background-accent: #333741;*/
 
-    /* --background-primary: #21242b;
-    --background-secondary: #191c21;
-    --background-tertiary: #15181c;
-    --background-accent: #313540; */
+/*    !* --background-primary: #21242b;*/
+/*    --background-secondary: #191c21;*/
+/*    --background-tertiary: #15181c;*/
+/*    --background-accent: #313540; *!*/
 
-    --primary: #ff6188;
-    --primary-light: #ff7a9c;
-    --primary-highlight: #ffb3c6;
+/*    --primary: #ff6188;*/
+/*    --primary-light: #ff7a9c;*/
+/*    --primary-highlight: #ffb3c6;*/
 
-    --text-primary: #f0f0f0;
-}
+/*    --text-primary: #f0f0f0;*/
+/*}*/
 
 :root {
     /* green */
@@ -40,6 +40,8 @@
     --primary-light: #34ea89;
     --primary-dark: #17da7240;
     --primary-highlight: #67efa6;
+    --error-light: #8ed933;
+
 
     --text-small: 1rem;
     --text-med: 1.25rem;
@@ -165,8 +167,9 @@ body {
 #register {
     text-align: center;
     max-width: initial;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
+    color: var(--error-light);
 }
 #register button {
     font-size: var(--text-med);
