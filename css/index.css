@@ -132,7 +132,7 @@ body {
 }
 .section:nth-child(2n) {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 #faq {
@@ -165,12 +165,32 @@ body {
 #register {
     text-align: center;
     max-width: initial;
-    padding-top: 5rem;
-    padding-bottom: 15rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 #register button {
     font-size: var(--text-med);
 }
+
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    border-bottom: 1px solid #7affb1;
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0rem;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#footer a {
+    color:var(--primary-light);
+}
+
 
 button {
     padding: 1em;
