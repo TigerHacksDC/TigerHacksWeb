@@ -37,6 +37,6 @@
 
 .tile:hover {
     /* filter: brightness(130%); */
-    background-color: var(--background-accent) !important;
+    background-color: var(--background-secondary) !important;
     transition: 0s;
 }
