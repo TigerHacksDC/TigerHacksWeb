@@ -41,19 +41,17 @@
     opacity: 0;
 
     transform: translateY(1em);
-    transition: 0.5s, background-position 0.75s;
+    transition: 0.5s;
 
-    background: linear-gradient(to right, var(--primary), var(--primary), var(--primary-highlight), var(--primary));
-    background-size: 500% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-
-    background-position: 0 0;
 }
 
+/* @supports (-) {
+    * {
+        color: red !important;
+    }
+} */
+
 #register-link:hover {
-    background-position: -100% 0;
     cursor: pointer;
     font-weight: 500;
 }
@@ -64,6 +62,18 @@
 
 #register-text {
     position: relative;
+    
+    background: linear-gradient(to right, var(--primary), var(--primary), var(--primary-highlight), var(--primary));
+    background-size: 500% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    transition: background-position 0.75s;
+    background-position: 0 0;
+}
+#register-text:hover {
+    background-position: -100% 0;
 }
 
 #register-text::after {
