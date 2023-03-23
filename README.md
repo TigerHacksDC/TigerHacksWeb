@@ -9,5 +9,7 @@ TigerHacksDC is only accepting contributions from Jackson-Reed students. Please 
 # Contributors
 
 Gus Ruben - Web design
+
 Wesley Hoy - Web advisory
+
 Damian A - Graphics
