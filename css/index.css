@@ -98,7 +98,7 @@ body {
 
 #footer {
     background-color: var(--background-tertiary);
-    padding: 7.5% 7.5% 10% 7.5%;
+    padding: min(7.5%, 6rem) 10%;
     color: var(--text-dim);
 }
 .footer-line {
