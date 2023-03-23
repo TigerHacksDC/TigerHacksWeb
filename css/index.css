@@ -40,7 +40,6 @@
     --primary-light: #34ea89;
     --primary-dark: #17da7240;
     --primary-highlight: #67efa6;
-    --error-light: #8ed933;
 
 
     --text-small: 1rem;
@@ -169,7 +168,6 @@ body {
     max-width: initial;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: var(--error-light);
 }
 #register button {
     font-size: var(--text-med);
@@ -215,6 +213,18 @@ button:hover {
 }
 button:active, button:focus {
     outline: 3px solid var(--primary-dark);
+}
+button.disabled {
+    background: transparent;
+    border: 3px solid var(--border);
+    color: var(--primary);
+    cursor: default;
+}
+button.disabled:hover {
+    outline: none;
+}
+button.disabled:active, button.disabled:focus {
+    outline: none;
 }
 
 h1 {
