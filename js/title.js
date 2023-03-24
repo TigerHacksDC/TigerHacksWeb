@@ -59,3 +59,16 @@ await new Promise(r => setTimeout(r, registerDelay))
 document.getElementById("register-link").style.opacity = "1";
 document.getElementById("register-link").style.transform = "none";
 
+// // event handler for when the screen sizing changes
+// window.addEventListener("resize", function() {
+//     // if img div overlaps title container, hide img
+//     console.log("img: " + document.getElementById("img").getBoundingClientRect().right);
+//     console.log("title: " + document.getElementById("title-container").getBoundingClientRect().right);
+//     if (document.getElementById("img").getBoundingClientRect.left < document.getElementById("title-container").getBoundingClientRect().right) {
+//         console.log("this is happening");
+//         document.getElementById("img").style.display = "none";
+//     }
+
+//     // console log coordinates of img div
+//     console.log(document.getElementById("img").getBoundingClientRect().x);
+// });

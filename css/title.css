@@ -103,3 +103,14 @@
     width: 0.1em;
     animation: cursor-blink 1s infinite;
 }
+/* 
+#img {
+    width: 20%;
+    height: 20%;
+    margin: 0 0.5em;
+    pointer-events: none;
+    top: 45%;
+    left: 75%;
+    transform: translateY(-50%);
+    position: absolute;
+} */
