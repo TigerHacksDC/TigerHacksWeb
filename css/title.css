@@ -18,10 +18,14 @@
     flex-direction: row;      
 }
 
-#title-text {
+#title-text, #title-text-wrapper {
     margin: 0;
     pointer-events: none;
-} 
+}
+
+#title-text {
+    display: inline;
+}
 
 #subtitle {
 
@@ -100,8 +104,12 @@
 
 #cursor {
     background-color: var(--primary);
-    width: 0.1em;
     animation: cursor-blink 1s infinite;
+
+    display: inline-block;
+    width: 0.1em;
+    height:1.25em;
+    transform: translate(-0.5em, 0.25em);
 }
 /* 
 #img {
