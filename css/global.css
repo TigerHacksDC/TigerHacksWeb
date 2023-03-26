@@ -86,7 +86,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     grid-gap: 1rem;
 }
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 40rem) {
     .cards {
         grid-template-columns: initial;
     }
