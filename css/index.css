@@ -61,6 +61,11 @@
     max-width: 70%;
     margin: auto;
 }
+@media screen and (max-width: 800px) {
+    #faq-wrapper {
+        max-width: 90%;
+    }
+}
 
 #sponsors {
     margin-left: auto;
