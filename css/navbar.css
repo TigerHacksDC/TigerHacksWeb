@@ -1,21 +1,24 @@
-#navbar {
+#navbar-wrapper {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     transition: transform 0.5s;
+    width: 100%;
+}
+#navbar-wrapper.hidden {
+    pointer-events: none;
+    transform: translateY(-100%);
+}
 
+#navbar {
     padding: 16px;
     width: 100%;
+    position: relative;
 
     font-size: var(--text-med);
     background-color: var(--background-tertiary);
     box-sizing: border-box;
-}
-
-#navbar.hidden {
-    pointer-events: none;
-    transform: translateY(-100%);
 }
 
 #navbar a {
@@ -59,4 +62,76 @@
 
 #navbar-right {
     float: right;
+}
+
+@media screen and (max-width: 500px) {
+    #navbar > *:not(.navbar-title):not(#navbar-button-wrapper) {
+        display: none;
+    }
+    
+    #navbar-button-wrapper {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+    #navbar-button {
+        --hamburger-thickness: 3px;
+        --hamburger-color: var(--primary);
+        --hamburger-width: 1.5em;
+        --hamburger-height: 1.3em;
+        --hamburger-thickness: 0.1em;
+
+        position: relative;
+
+        width: var(--hamburger-width);
+        height: var(--hamburger-height);
+
+        cursor: pointer;
+    }
+    #navbar-button span {
+        width: var(--hamburger-width);
+        height: var(--hamburger-thickness);
+        background-color: var(--hamburger-color);
+        position: absolute;
+    }
+    #navbar-button span:nth-child(1) {
+        top: 0;
+    }
+    #navbar-button span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #navbar-button span:nth-child(3) {
+        bottom: 0;
+    }
+
+    #navbar.active #navbar-button span:nth-child(1) {
+        --hamburger-thickness: 0.15em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+    #navbar.active  #navbar-button span:nth-child(2) {
+        --hamburger-thickness: 0.15em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+    #navbar.active  #navbar-button span:nth-child(3) {
+        display: none;
+    }
+
+    #navbar.active > *:not(#navbar-button) {
+        display: block !important;
+        width: max-content;
+        margin-top: 0.1em;
+    }
+
+    #navbar.active #navbar-right {
+        float: initial;
+    }
+    #navbar.active #navbar-right a:first-child {
+        display: block;
+        margin-bottom: 0.5em;
+    }
 }
