@@ -48,6 +48,7 @@
     --text-big: 2rem;
     --text-subtitle: 3rem;
     --text-title: 5rem;
+    --text-giant: 10rem;
 
     --radius-small: 3px;
     --radius: 10px;
@@ -171,4 +172,8 @@ h1 {
 }
 h1::selection {
     background-color: var(--primary);
+}
+
+a {
+    color: var(--primary);
 }
