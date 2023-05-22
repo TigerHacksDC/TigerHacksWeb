@@ -96,3 +96,19 @@
 #register button {
     font-size: var(--text-med);
 }
+
+#organizers {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: initial;
+    text-align: center;
+}
+#organizers > p {
+    max-width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+#organizer-names p {
+    margin: 0.15em;
+    color: var(--primary);
+}
