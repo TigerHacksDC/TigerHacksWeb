@@ -4,33 +4,41 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TigerHacks 2023 Registration</title>
+        <link rel="stylesheet" href="css/global.css" />
         <style>
             body {
                 margin: 0;
                 background-color: #303030;
             }
-            h1, p, a{
-                font-family: Arial,serif;
-                color: #9dcb9d;
+
+            #closed {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
                 text-align: center;
+            }
+            #closed h1 {
+                color: #17da72;
             }
         </style>
     </head>
     <body>
-<!--        <iframe-->
-<!--            id="JotFormIFrame-231236290089153"-->
-<!--            onload="window.parent.scrollTo(0,0)"-->
-<!--            allowtransparency="true"-->
-<!--            allowfullscreen="true"-->
-<!--            allow="geolocation; microphone; camera"-->
-<!--            src="https://form.jotform.com/231236290089153"-->
-<!--            frameborder="0"-->
-<!--            style="min-width: 100%; max-width: 100%; height: 539px; border: none"-->
-<!--            scrolling="no">-->
-<!--        </iframe>-->
-        <h1>Registration Closed!</h1>
-        <p>Contact tigerhacksdc@gmail.com for information</p>
-        <p><a href="index.html">Return to home</a></p>
+        <!-- Registration is disabled
+
+        <iframe
+            id="JotFormIFrame-231236290089153"
+            onload="window.parent.scrollTo(0,0)"
+            allowtransparency="true"
+            allowfullscreen="true"
+            allow="geolocation; microphone; camera"
+            src="https://form.jotform.com/231236290089153"
+            frameborder="0"
+            style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+            scrolling="no">
+        </iframe>
+
         <script type="text/javascript">
             var ifr = document.getElementById("JotFormIFrame-231236290089153");
             if (ifr) {
@@ -148,5 +156,20 @@
                 window.attachEvent("onmessage", handleIFrameMessage);
             }
         </script>
+        -->
+
+        <div id="closed">
+            <h1>Sorry!</h1>
+            <p>
+                Registration is closed! If you still need to get a teammate in, email us at
+                <a href="mailto:tigerhacksdc@gmail.com">tigerhacksdc@gmail.com</a> by the end of
+                6/9!
+            </p>
+            <br>
+            <small style="opacity: 75%">
+                <a href="/">Go back</a>
+            </small>
+        </div>
+
     </body>
 </html>

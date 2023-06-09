@@ -39,6 +39,7 @@
     --primary: #17da72;
     /* --primary: #00db12; */
     --primary-light: #34ea89;
+    --primary-disabled: #1daf61;
     --primary-dark: #17da7240;
     --primary-highlight: #67efa6;
 
@@ -161,6 +162,14 @@ button.smooth:active, button.smooth:focus,
 .button.smooth:active, .button.smooth:focus {
     background-color: rgba(0, 0, 0, 0.1);
     outline: none
+}
+
+button.smooth.disabled,
+.button.smooth.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: line-through;
+    color: var(--primary-disabled);
 }
 
 a.button {
